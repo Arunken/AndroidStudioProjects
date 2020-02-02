@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="styleTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="styleTextView.Title">
+        <item name="android:textSize">50sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="styleTextView.Warning">
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+    </style>
+
+</resources>

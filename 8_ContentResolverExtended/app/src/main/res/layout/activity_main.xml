@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnShowContacts"
+        android:layout_alignTop="@+id/txtadd"
+        android:onClick="addContact"
+        android:text="ADD CONTACT" />
+
+    <Button
+        android:id="@+id/btnfind"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnShowContacts"
+        android:layout_alignTop="@+id/txtfind"
+        android:onClick="findContact"
+        android:text="FIND CONTACT" />
+
+    <Button
+        android:id="@+id/btnShowContacts"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="showContacts"
+        android:text="Show Contacts" />
+
+    <EditText
+        android:id="@+id/txtdelete"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:hint="ID to Delete"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtfind"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="ID to Find"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtadd"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="209dp"
+        android:ems="10"
+        android:hint="Name to Add"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtdelete"
+        android:layout_marginEnd="14dp"
+        android:onClick="deleteContact"
+        android:text="DELETE ID" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/txtdelete"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp">
+
+        <TextView
+            android:id="@+id/contactsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="174dp"
+            android:text="Contacts"
+            android:textSize="20dp" />
+    </ScrollView>
+
+
+</RelativeLayout>
